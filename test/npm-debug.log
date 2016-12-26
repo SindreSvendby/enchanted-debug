@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/sindre/.nvm/versions/node/v7.3.0/bin/node',
+1 verbose cli   '/home/sindre/.nvm/versions/node/v7.3.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'test' ]
+2 info using npm@3.10.10
+3 info using node@v7.3.0
+4 verbose run-script [ 'pretest', 'test', 'posttest' ]
+5 info lifecycle enchanted-debug@0.0.1~pretest: enchanted-debug@0.0.1
+6 silly lifecycle enchanted-debug@0.0.1~pretest: no script for pretest, continuing
+7 info lifecycle enchanted-debug@0.0.1~test: enchanted-debug@0.0.1
+8 verbose lifecycle enchanted-debug@0.0.1~test: unsafe-perm in lifecycle true
+9 verbose lifecycle enchanted-debug@0.0.1~test: PATH: /home/sindre/.nvm/versions/node/v7.3.0/lib/node_modules/npm/bin/node-gyp-bin:/home/sindre/git/personal/enchanted-debug/node_modules/.bin:/home/sindre/apps/flow:/home/sindre/miniconda3/bin:/home/sindre/.nvm/versions/node/v7.3.0/bin:/home/sindre/apps/flow/flow:/home/sindre/.nvm/versions/node/v7.0.0/lib:/home/sindre/apps/robomongo/bin:./node_modules/.bin/:/home/sindre/git/personal/dotFiles/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+10 verbose lifecycle enchanted-debug@0.0.1~test: CWD: /home/sindre/git/personal/enchanted-debug
+11 silly lifecycle enchanted-debug@0.0.1~test: Args: [ '-c', 'npm run lint && npm run test' ]
+12 silly lifecycle enchanted-debug@0.0.1~test: Returned: code: 1  signal: null
+13 info lifecycle enchanted-debug@0.0.1~test: Failed to exec test script
+14 verbose stack Error: enchanted-debug@0.0.1 test: `npm run lint && npm run test`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/home/sindre/.nvm/versions/node/v7.3.0/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/home/sindre/.nvm/versions/node/v7.3.0/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:885:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid enchanted-debug@0.0.1
+16 verbose cwd /home/sindre/git/personal/enchanted-debug/test
+17 error Linux 4.4.0-57-generic
+18 error argv "/home/sindre/.nvm/versions/node/v7.3.0/bin/node" "/home/sindre/.nvm/versions/node/v7.3.0/bin/npm" "run" "test"
+19 error node v7.3.0
+20 error npm  v3.10.10
+21 error code ELIFECYCLE
+22 error enchanted-debug@0.0.1 test: `npm run lint && npm run test`
+22 error Exit status 1
+23 error Failed at the enchanted-debug@0.0.1 test script 'npm run lint && npm run test'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the enchanted-debug package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     npm run lint && npm run test
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs enchanted-debug
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls enchanted-debug
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

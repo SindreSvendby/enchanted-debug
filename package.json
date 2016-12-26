@@ -1,0 +1,33 @@
+{
+  "name": "enchanted-debug",
+  "version": "0.0.1",
+  "description": "a wrapper around the amazing debug package that follow debug best practises",
+  "main": "index.js",
+  "scripts": {
+    "unittest": "babel-node test/test",
+    "test": "npm run lint && npm run test",
+    "lint": " eslint *.js"
+  },
+  "keywords": [
+    "debug",
+    "logging"
+  ],
+  "author": "Sindre Øye Svendby",
+  "license": "ISC",
+  "peerDependencies": {
+    "debug": "2.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "debug": "^2.5.1",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "dependencies": {
+    "callsite": "^1.0.0",
+    "find-root": "^1.0.0",
+    "relative-filepath-from-module": "^0.0.1"
+  }
+}
