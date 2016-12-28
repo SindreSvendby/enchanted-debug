@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "unittest": "babel-node test/test",
-    "test": "npm run lint && npm run test",
+    "test": "xo && npm run lint && npm run test && ava",
     "lint": " eslint *.js"
   },
   "keywords": [
@@ -18,16 +18,27 @@
     "debug": "2.5.1"
   },
   "devDependencies": {
+    "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
     "debug": "^2.5.1",
     "eslint": "^3.12.2",
     "eslint-config-airbnb-base": "^11.0.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "xo": "^0.17.1"
   },
   "dependencies": {
+    "babel-preset-stage-0": "^6.16.0",
     "callsite": "^1.0.0",
+    "eslint-plugin-ava": "^4.0.0",
     "find-root": "^1.0.0",
-    "relative-filepath-from-module": "^0.0.1"
+    "relative-filepath-from-module": "^0.0.1",
+    "sinon": "^1.17.6"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
   }
 }
