@@ -4,9 +4,9 @@
   "description": "a wrapper around the amazing debug package that follow debug best practises",
   "main": "index.js",
   "scripts": {
-    "watch": "DEBUG='*,-ava,-babel' ava --serial --watch",
-    "test": "xo && DEBUG='*,-ava' ava && nyc ava",
-    "coveralls": ""
+    "watch": "DEBUG='*,-ava,-babel' ava --watch",
+    "test": "xo && DEBUG='*,-ava,-babel' ava",
+    "coveralls": "nyc DEBUG='*,-ava,-babel' ava | coveralls"
   },
   "engines": {
     "node": ">4.0.0"
@@ -42,6 +42,7 @@
     "require": [
       "babel-register"
     ],
-    "babel": "inherit"
+    "babel": "inherit",
+    "serial": true
   }
 }
