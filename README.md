@@ -1,6 +1,8 @@
 #enchanted-debug
 
 [![Coverage Status](https://coveralls.io/repos/github/SindreSvendby/enchanted-debug/badge.svg)](https://coveralls.io/github/SindreSvendby/enchanted-debug)
+[![Dependency Status](https://dependencyci.com/github/SindreSvendby/enchanted-debug/badge)](https://dependencyci.com/github/SindreSvendby/enchanted-debug)
+[ ![Codeship Status for SindreSvendby/enchanted-debug](https://app.codeship.com/projects/244cf160-b1cb-0134-df39-72b4409ab7af/status?branch=master)](https://app.codeship.com/projects/193272)
 
 a wrapper around the amazing [debug package](https://www.npmjs.com/package/debug) that follow what we think is best practises
 (this is while debug has not released version 3, in version 3 they are adding middleware, that could do this in a better manner)
