@@ -4,9 +4,8 @@
   "description": "a wrapper around the amazing debug package that follow debug best practises",
   "main": "index.js",
   "scripts": {
-    "unittest": "babel-node test/test",
-    "test": "xo && npm run lint && npm run test && ava",
-    "lint": " eslint *.js"
+    "watch": "DEBUG='*,-ava,-babel' ava --serial --watch",
+    "test": "xo && DEBUG='*,-ava' ava"
   },
   "keywords": [
     "debug",
