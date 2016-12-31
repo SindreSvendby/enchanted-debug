@@ -5,34 +5,37 @@
   "main": "index.js",
   "scripts": {
     "watch": "DEBUG='*,-ava,-babel' ava --serial --watch",
-    "test": "xo && DEBUG='*,-ava' ava"
+    "test": "xo && DEBUG='*,-ava' ava && nyc ava"
+  },
+  "engines" : {
+    "node" : ">4.0.0"
   },
   "keywords": [
+    "debug-middleware"
     "debug",
     "logging"
   ],
   "author": "Sindre Øye Svendby",
   "license": "ISC",
   "peerDependencies": {
-    "debug": "2.5.1"
+    "debug": "*"
   },
   "devDependencies": {
     "ava": "^0.17.0",
+    "eslint-plugin-ava": "^4.0.0",
     "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
+    "coveralls": "^2.11.15",
     "debug": "^2.5.1",
+    "nyc": "^10.0.0",
     "eslint": "^3.12.2",
     "eslint-config-airbnb-base": "^11.0.0",
+    "sinon": "^1.17.6",
     "eslint-plugin-import": "^2.2.0",
     "xo": "^0.17.1"
   },
   "dependencies": {
-    "babel-preset-stage-0": "^6.16.0",
-    "callsite": "^1.0.0",
-    "eslint-plugin-ava": "^4.0.0",
-    "find-root": "^1.0.0",
-    "relative-filepath-from-module": "^0.0.1",
-    "sinon": "^1.17.6"
+    "callsite": "^1.0.0"
   },
   "ava": {
     "require": [
