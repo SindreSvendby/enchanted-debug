@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch": "DEBUG='*,-ava,-babel' ava --watch",
-    "test": "xo && DEBUG='*,-ava,-babel' ava",
-    "coveralls": "nyc DEBUG='*,-ava,-babel' ava | coveralls"
+    "test": "xo && DEBUG='*,-ava,-babel' nyc ava",
+    "coveralls": "DEBUG='*,-ava,-babel' nyc report --reporter=text-lcov | coveralls"
   },
   "engines": {
     "node": ">4.0.0"
