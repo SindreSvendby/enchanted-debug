@@ -8,8 +8,8 @@
     "test": "xo && DEBUG='*,-ava' ava && nyc ava",
     "coveralls": ""
   },
-  "engines" : {
-    "node" : ">4.0.0"
+  "engines": {
+    "node": ">4.0.0"
   },
   "keywords": [
     "debug-middleware",
@@ -23,18 +23,19 @@
   },
   "devDependencies": {
     "ava": "^0.17.0",
-    "eslint-plugin-ava": "^4.0.0",
     "babel-preset-latest": "^6.16.0",
     "coveralls": "^2.11.15",
     "debug": "^2.5.1",
-    "nyc": "^10.0.0",
     "eslint": "^3.12.2",
     "eslint-config-airbnb-base": "^11.0.0",
-    "sinon": "^1.17.6",
+    "eslint-plugin-ava": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
+    "nyc": "^10.0.0",
+    "sinon": "^1.17.6",
     "xo": "^0.17.1"
   },
   "dependencies": {
+    "babel-preset-stage-0": "^6.16.0",
     "callsite": "^1.0.0"
   },
   "ava": {
