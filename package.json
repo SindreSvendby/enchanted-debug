@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "watch": "DEBUG='*,-ava,-babel' ava --serial --watch",
-    "test": "xo && DEBUG='*,-ava' ava && nyc ava"
+    "test": "xo && DEBUG='*,-ava' ava && nyc ava",
+    "coveralls": ""
   },
   "engines" : {
     "node" : ">4.0.0"
   },
   "keywords": [
-    "debug-middleware"
+    "debug-middleware",
     "debug",
     "logging"
   ],
@@ -23,7 +24,6 @@
   "devDependencies": {
     "ava": "^0.17.0",
     "eslint-plugin-ava": "^4.0.0",
-    "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
     "coveralls": "^2.11.15",
     "debug": "^2.5.1",
