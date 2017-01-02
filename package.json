@@ -1,6 +1,6 @@
 {
   "name": "enchanted-debug",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a wrapper around the amazing debug that automaticly adds namespace based on the path and project root.",
   "main": "index.js",
   "scripts": {
