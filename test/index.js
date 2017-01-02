@@ -5,6 +5,7 @@ import sinon from 'sinon';
 import enchantDebug, {testInternals} from '../src';
 
 beforeEach(() => {
+	console.log('process.env.DEBUG', process.env.DEBUG);
 	sinon.spy(debug, 'log');
 });
 
