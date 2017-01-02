@@ -1,7 +1,7 @@
 {
   "name": "enchanted-debug",
   "version": "0.0.1",
-  "description": "a wrapper around the amazing debug package that follow debug best practises",
+  "description": "a wrapper around the amazing debug that automaticly adds namespace based on the path and project root.",
   "main": "index.js",
   "scripts": {
     "watch": "DEBUG='*,-ava,-babel' ava --watch",
@@ -32,11 +32,11 @@
     "eslint-plugin-import": "^2.2.0",
     "nyc": "^10.0.0",
     "sinon": "^1.17.6",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-stage-0": "^6.16.0",
     "xo": "^0.17.1"
   },
   "dependencies": {
-    "babel-polyfill": "^6.20.0",
-    "babel-preset-stage-0": "^6.16.0",
     "callsite": "^1.0.0"
   },
   "ava": {
