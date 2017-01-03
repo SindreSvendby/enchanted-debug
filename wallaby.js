@@ -26,7 +26,7 @@ module.exports = function (wallaby) {
 		testFramework: 'ava',
 		debug: true,
 		workers: {recycle: true},
-		setup: (w) => {
+		setup: w => {
 			if (!global._callsiteReplaced) {
 				const Module = require('module').Module;
 				const modulePrototype = Module.prototype;
