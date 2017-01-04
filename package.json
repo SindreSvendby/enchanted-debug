@@ -2,9 +2,12 @@
   "name": "enchanted-debug",
   "version": "0.1.0",
   "description": "a wrapper around the amazing debug that automaticly adds namespace based on the path and project root.",
-  "main": "index.js",
+  "main": "lib/",
   "scripts": {
     "watch": "DEBUG='*,-ava,-babel' ava --watch",
+    "prepublish": "npm run build",
+    "build": "babel src -d lib",
+    "prebuild": "npm test",
     "test": "xo && DEBUG='*,-ava,-babel' nyc ava",
     "coveralls": "DEBUG='*,-ava,-babel' nyc report --reporter=text-lcov | coveralls"
   },
@@ -23,7 +26,10 @@
   },
   "devDependencies": {
     "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-polyfill": "^6.20.0",
     "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
     "coveralls": "^2.11.15",
     "debug": "^2.5.1",
     "eslint": "^3.12.2",
@@ -32,12 +38,13 @@
     "eslint-plugin-import": "^2.2.0",
     "nyc": "^10.0.0",
     "sinon": "^1.17.6",
-    "babel-polyfill": "^6.20.0",
-    "babel-preset-stage-0": "^6.16.0",
     "xo": "^0.17.1"
   },
   "dependencies": {
     "callsite": "^1.0.0"
+  },
+  "xo": {
+    "ignores": "lib/**"
   },
   "ava": {
     "require": [
