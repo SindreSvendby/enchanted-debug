@@ -18,12 +18,10 @@ My intention is for use on server side. how this will work on the browser with m
 Do not need to specify a namespace for each module. you only specify the project root folder,
 
 This give the following benefits:
-1 . less work
+
+1. less work
 2. lower chance of a copy/paste mistake.
 3. follow [debug conventions](https://github.com/visionmedia/debug/#conventions) automatically.
-
-
-Also expose and error method to follow debug best practies and
 
 
 ## Prerequisite
