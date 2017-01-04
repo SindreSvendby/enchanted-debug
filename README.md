@@ -11,8 +11,19 @@ This module will be obsolete when [debug]() is in version 3, sjekk out this [git
 ## Cons
 Performance is not the best, since we use callsite. So keep that in mind.
 
+My intention is for use on server side. how this will work on the browser with minifiers and I haven't thought of
+
 ## Pros
-1. Do not need to
+
+Do not need to specify a namespace for each module. you only specify the project root folder,
+
+This give the following benefits:
+1 . less work
+2. lower chance of a copy/paste mistake.
+3. follow [debug conventions](https://github.com/visionmedia/debug/#conventions) automatically.
+
+
+Also expose and error method to follow debug best practies and
 
 
 ## Prerequisite
